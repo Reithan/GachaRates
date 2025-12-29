@@ -1,3 +1,4 @@
 canonical,aliases,l1_B,l1_P,l1_R,l1_H,l1_C,l1_G,l1_rateup_desired,l2_B,l2_P,l2_R,l2_H,l2_C,l2_G,l2_rateup_desired,notes
-Example Split,SplitExample|EXS,0.01,,,100,0.5,2,true,0.05,,,10,0.5,2,true,"Placeholder values; override as needed"
-Example Single,SingleExample|EX1,0.02,,,,0.5,1,true,,,,,,,,"Only L1 used"
+Example Split,SplitExample|EXS,0.01,,,100,0.5,2,true,0.05,,,10,0.5,2,true,Placeholder values; override as needed
+Example Single,SingleExample|EX1,0.02,,,,0.5,1,true,,,,,,,,Only L1 used
+Resonance Solstice,Solstice|RS,0.02,70,0.1,80,0.5,2,true

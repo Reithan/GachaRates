@@ -1,4 +1,4 @@
-# GachaRates
+TEST CHANGE # GachaRates
 
 **GachaRates** is a small command-line tool that estimates
 **how many pulls you should expect to make before you get something you want**

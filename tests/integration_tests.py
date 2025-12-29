@@ -65,8 +65,8 @@ def test_cli_rate_template_ok(temp_templates_csv):
     # template positional then subcommand
     code, out, err = run_cmd([
         sys.executable, banner_py_path(),
-        "Example Single",
         "--templates-csv", str(temp_templates_csv),
+        "Example Single",
         "rate",
         "--W", "0.5",
     ])
@@ -78,8 +78,8 @@ def test_cli_rate_template_override_param(temp_templates_csv):
     # Override template B to make EV differ; ensure command runs successfully
     code, out, err = run_cmd([
         sys.executable, banner_py_path(),
-        "Example Single",
         "--templates-csv", str(temp_templates_csv),
+        "Example Single",
         "rate",
         "--W", "1.0",
         "--B", "0.5",
@@ -91,8 +91,8 @@ def test_cli_rate_template_override_param(temp_templates_csv):
 def test_cli_split_rate_template_ok(temp_templates_csv):
     code, out, err = run_cmd([
         sys.executable, banner_py_path(),
-        "Example Split",
         "--templates-csv", str(temp_templates_csv),
+        "Example Split",
         "split-rate",
         "--l1_W", "0.0",
         "--l2_W", "1.0",
@@ -108,8 +108,8 @@ def test_cli_split_rate_template_missing_l2_fails(temp_templates_csv):
     # Example Single has no L2; split-rate should fail
     code, out, err = run_cmd([
         sys.executable, banner_py_path(),
-        "Example Single",
         "--templates-csv", str(temp_templates_csv),
+        "Example Single",
         "split-rate",
         "--l1_W", "0.0",
         "--l2_W", "1.0",

@@ -26,9 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          # If you later add a requirements.txt or pyproject, replace this with that install.
-          python -m pip install pytest numpy
+          python -m pip install -e ".[dev]"
 
       - name: Run unit tests
         run: |

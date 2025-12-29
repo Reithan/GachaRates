@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gacha-rates"
+version = "0.1.0"
+description = "Expected value calculator for gacha-style pull systems"
+readme = "README.md"
+requires-python = ">=3.11"
+
+authors = [
+  { name = "GachaRates Contributors" }
+]
+
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["*.py"]
+
+[tool.setuptools]
+py-modules = [
+  "gacha_math",
+  "banner",
+]

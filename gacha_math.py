@@ -204,7 +204,10 @@ def expected_pulls_single(lp: LevelParams, start_fail: int = 0, start_nonrate: i
                 j2 = min(j + 1, G - 1) if G > 1 else 0
                 A[row, idx(0, j2)] -= po_not_des
 
-    x = np.linalg.solve(A, b)
+    try:
+        x = np.linalg.solve(A, b)
+    except np.linalg.LinAlgError:
+        return float("inf")
     start_fail = max(0, min(start_fail, H_eff - 1))
     start_nonrate = max(0, min(start_nonrate, G - 1))
     return float(x[idx(start_fail, start_nonrate)])
@@ -371,7 +374,10 @@ def expected_pulls_split(
                             new_i2 = 0
                             A[row, idx(i1_after, j1, new_i2, new_j2)] -= po2_not_des
 
-        x = np.linalg.solve(A, b)
+        try:
+            x = np.linalg.solve(A, b)
+        except np.linalg.LinAlgError:
+            return float("inf")
         sf1 = max(0, min(start_fail_1, H1 - 1))
         sj1 = max(0, min(start_nonrate_1, G1 - 1))
         sf2 = max(0, min(start_fail_2, H2 - 1))

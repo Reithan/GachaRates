@@ -4,3 +4,4 @@ Example Single,SingleExample|EX1,0.02,,,,0.5,1,true,,,,,,,,Only L1 used
 Resonance Solstice,Solstice|RS,0.02,70,0.1,80,0.5,2,true,0.1,,,10,,,false
 Morimens WOD,Morimens WOD|Morimens Wheel|Mori WOD|Mori Wheel|MWOD,0.0303,,,30,0.5,2,true,.1585,,,5,,,false
 Morimens Awakener,Morimens Awakener|Mori Awakener|Mori AWK|MAWK,.0303,,,30,.3333,3,true,.1585,,,5,,,false
+Reverse: 1999,Reverse: 1999|R1999|R99|Rev99,0.015,60,0.025,70,0.5,2,true,0.085,,,10,0.5,,true,

@@ -93,7 +93,7 @@ def test_cli_split_rate_template_ok(temp_templates_csv):
         sys.executable, banner_py_path(),
         "--templates-csv", str(temp_templates_csv),
         "Example Split",
-        "split-rate",
+        "split",
         "--l1_W", "0.0",
         "--l2_W", "1.0",
     ])
@@ -110,7 +110,7 @@ def test_cli_split_rate_template_missing_l2_fails(temp_templates_csv):
         sys.executable, banner_py_path(),
         "--templates-csv", str(temp_templates_csv),
         "Example Single",
-        "split-rate",
+        "split",
         "--l1_W", "0.0",
         "--l2_W", "1.0",
     ])

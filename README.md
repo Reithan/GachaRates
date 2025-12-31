@@ -23,7 +23,7 @@ You run the tool once per banner and it prints expected pull counts.
 Use a **game template** and only specify what *you* want.
 
 ```bash
-python banner.py rate "Genshin Impact" --W 0.25
+python banner.py Genshin Impact rate --W 0.25
 ```
 
 This means:
@@ -44,7 +44,7 @@ python banner.py --list-templates rate
 Some banners have two outcome levels (e.g. “high” and “low” rarity).
 
 ```bash
-python banner.py split-rate "Genshin Impact" --l1_W 0.0 --l2_W 0.3
+python banner.py Genshin Impact split --l1_W 0.0 --l2_W 0.3
 ```
 
 This prints:
@@ -69,7 +69,7 @@ python banner.py rate --B 0.02 --C 0.5 --W 0.2
 Split level:
 
 ```bash
-python banner.py split-rate \
+python banner.py split \
   --l1_B 0.01 --l1_C 0.5 --l1_W 0.0 \
   --l2_B 0.05 --l2_C 0.5 --l2_W 0.3
 ```

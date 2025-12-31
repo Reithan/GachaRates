@@ -57,7 +57,7 @@ def main() -> None:
     ap_rate.add_argument("--start-nonrate", type=int, default=0)
 
     # ---- split-rate ----
-    ap_split = sub.add_parser("split-rate", help="Two-level EV (L1 + L2), including EV to any desired.")
+    ap_split = sub.add_parser("split", help="Two-level EV (L1 + L2), including EV to any desired.")
     add_level_flags(ap_split, prefix="l1_")
     add_level_flags(ap_split, prefix="l2_")
 
@@ -99,7 +99,7 @@ def main() -> None:
         print(f"EV pulls to desired (single level): {ev}")
         return
 
-    if args.cmd == "split-rate":
+    if args.cmd == "split":
         if template_obj is not None:
             if template_obj.l2 is None:
                 raise SystemExit("Selected template has no L2 parameters for split-rate.")
